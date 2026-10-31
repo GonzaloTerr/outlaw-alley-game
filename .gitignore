@@ -1,0 +1,11 @@
+# Build packages and marketing images
+entrega/
+portadas/
+
+# High-resolution art originals
+arte/originales/
+
+node_modules/
+.DS_Store
+Thumbs.db
+*.log

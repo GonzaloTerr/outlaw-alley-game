@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<title>Outlaw Alley 2</title>
+<link rel="icon" href="data:,">
+<style>
+  /* Tipografía del Oeste (Rye, SIL Open Font License, ver fuente/OFL.txt), la misma de la versión 1. */
+  @font-face { font-family: 'Rye'; src: url('fuente/Rye-Regular.ttf') format('truetype'); font-display: block; }
+  html, body { margin: 0; height: 100%; background: #000; overflow: hidden; touch-action: none; }
+  body { -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; -webkit-touch-callout: none; }
+  #juego { width: 100%; height: 100%; }
+  canvas { cursor: none; }
+  /* Aviso de girar el teléfono: lo muestra game.js cuando el celular está en vertical. */
+  #girar { position: fixed; inset: 0; z-index: 10; display: none; align-items: center; justify-content: center;
+    padding: 24px; background: #1b0f07; color: #ffd23f; font: min(26px, 6.5vw) Rye, Georgia, serif; text-align: center;
+    white-space: pre-line; line-height: 1.6; }
+</style>
+</head>
+<body>
+<div id="juego"></div>
+<!-- SDK de CrazyGames, para los avisos entre partes. Si no carga (otro sitio, bloqueador), el juego anda igual. -->
+<script src="https://sdk.crazygames.com/crazygames-sdk-v3.js"></script>
+<script src="lib/phaser.min.js"></script>
+<script src="game.js"></script>
+</body>
+</html>
